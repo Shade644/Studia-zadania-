@@ -5,7 +5,12 @@
 
 let length = 5;
 let randomString = '';
-/*
-    Wpisz kod zadania w miejscu tego komentarza.
-*/
+let arr = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9"];
+
+let a = arr.sort(() => 0.5 - Math.random());
+randomString = a.slice(0, length);
+
+
+
+
 console.log(randomString);

@@ -1,3 +1,4 @@
+
 /**
  * Napisz skrypt, który na podstawie zmiennych rectWidth i rectHeight stworzy łańcuch rectString zawierający pustą rankę o podanych wymiarach.
  * Ramka ma być zbudowana ze znaków w zmienej rectBorderSymbol.
@@ -11,11 +12,48 @@
  * #     #
  * #######  
  */
-let rectWidth = 7;
-let rectHeight = 5;
-let rectBorderSymbol = '#';
-let rectString = '';
+ let rectWidth = 7;
+ let rectHeight = 5;
+ let rectBorderSymbol = '#';
+ let rectString = '';
+ let a=''
+ let b=''
+
+ if(rectWidth <= -1 || rectWidth>=81){
+    console.log("liczby mają być w zakresie 0 do 80")
+}
+
+if(rectHeight <= -1 || rectHeight>=81){
+    console.log("liczby mają być w zakresie 0 do 80!")
+}
 /*
-    Wpisz kod zadania w miejscu tego komentarza.
+if (rectBorderSymbol == ){
+    console.log("nie uzywaj znaków białych")
+}
 */
-console.log(rectString);
+
+for(let i=0; i<rectWidth; i++){
+    rectString+=rectBorderSymbol;
+}
+
+rectString += "\n";
+
+for(let i=0; i<rectHeight-2; i++){
+
+    rectString+=rectBorderSymbol;
+
+        for(let j = 0; j<rectWidth-2; j++){
+            rectString+=" "       
+        }
+    rectString+=rectBorderSymbol;
+    rectString += "\n";
+}
+
+
+   
+
+for(let i=0; i<rectWidth; i++){
+    rectString+=rectBorderSymbol;
+}
+
+ console.log(rectString);

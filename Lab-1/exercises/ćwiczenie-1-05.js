@@ -6,13 +6,28 @@
  * Przykład
  * Dla `n` = 36,6 i `m` = 50
  * skrypt powinien utworzyć w prograssBar łańcuch jak poniżej:
- * |################################                  |
+ * |################################                  | 32 znaki
  * 0 %                      75%                    100%
  */
-let n = 34;
-let m = 190;
+let n = 36.6;
+let m = 50;
 let progressBar = ""
-/*
-    Wpisz kod zadania w miejscu tego komentarza.
-*/
-console.log(progressBar)
+
+let a = (n/m)*100;
+let d= 100-a;
+let b=""
+let c=""
+
+for (let i=1;i<=Math.round(d/2);i++){
+    c+=' '
+}
+
+   for(let j=0; j<Math.round(a/2); j++)
+   {
+       b+='#'
+   }
+
+progressBar='|'+b+c+'|'
+let enter=("\n")
+let text=("0%                    "+a+"%"+"                     100%")
+console.log(progressBar+enter+text)
