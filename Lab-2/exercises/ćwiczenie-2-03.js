@@ -19,8 +19,8 @@ function selectItems(arr, filter) {
  * - otrzymać tablicę imion zaczynających się literą A 
  */
 let names = ["Adam", "Ewa", "Karol", "Robert", "Franciszek", "Ala", "Tom", "Arkadiusz"];
-let threeLetersNames = selectItems(names);         //dodaj drugi arguemnt
-let startsWithANames = selectItems(names);         //dodaj drugi argument
+let threeLetersNames = selectItems(names,function filter(name){if(name.length == 3) return true;});         //dodaj drugi arguemnt
+let startsWithANames = selectItems(names,function filter(name){if(name[0] == "A") return true;});           //dodaj drugi arguemnt
 
 
 //Testy

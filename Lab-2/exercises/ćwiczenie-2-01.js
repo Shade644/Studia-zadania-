@@ -5,40 +5,19 @@
  * radius(4, 2, -2, "a")    -> [1.1283791670955126, 0.7978845608028654, NaN, NaN] 
  * radius()                 -> []
  */
-function radius(a,b,c,d,e){
-    let result='';
+ function radius() {
+    let tablica =[];
+    let pi=Math.PI;
 
-    if (radius === undefined && radius === null){
-    result='';
-        console.log(result);
-return true;
+    if (arguments.length > 0) {
+    for (let i = 0; i < arguments.length; i++)
+    {
+        tablica[i] = Math.sqrt(arguments[i] / pi)
     }
-    else if(isNaN(b) && isNaN(c) && isNaN(d) && isNaN(e)){
-        let pi = Math.PI;
-        let r= Math.sqrt(a/pi);
-         result =[r];
-         console.log(result)
-
-    }
-    
-    else{
-    let pi = Math.PI;
-    let r= Math.sqrt(a/pi);
-
-    let r2= Math.sqrt(b/pi);
-
-     let r3= Math.sqrt(c/pi);
-
-     let r4= Math.sqrt(d/pi);
-  
-     let r5= Math.sqrt(e/pi);
-     
-      result = [r,r2,r3,r4,r5];
-     console.log(result);
-     
-    }
-    return radius;
 }
+    return tablica;
+}
+    
 /**
  * Testy. Nic nie zmieniaj!!!
  */
