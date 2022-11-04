@@ -27,15 +27,6 @@ else{
     return result;
 }
 
-    // let array = sentence.match( /regexp/ ) || [];
-    // let longest="";
-    // for (let i=0;i<sentence.longest;i++){
-    //     if(sentence[i].length >= longest.length){
-    //         longest=array[i];
-    //     }
-    // }
-    // return longest;
-
 }
 
 //Testy
