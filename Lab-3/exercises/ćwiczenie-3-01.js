@@ -5,7 +5,18 @@
  */
 
 function largestNumber(arr){
-    
+
+    if(!arr || !arr.lenght){
+        return undefined;
+    }
+    else {
+        flattened = arr.flatMap(num => num)
+        console.log(flattened);
+        const a = Math.max.apply(null,flattened);
+        console.log(a);
+        return a;
+    }
+ 
 }
 
 let arr1 = [[1, 2, 3, 5], [2, 6, 8], [1, 67], [4, 6, 98]];

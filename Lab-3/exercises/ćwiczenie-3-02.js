@@ -4,7 +4,16 @@
 
 function *evenNumbers(n, m){
     
+let i;
+    for (i = n; i <= m; i++){
+        if (i % 2 == 0){
+           // console.log(i);
+            yield i;
+        }
+    }
 }
+
+
 
 let sum = 0;
 for(let item of evenNumbers(1, 9)){
