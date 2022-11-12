@@ -20,7 +20,7 @@ try{
 /**
  * Opcjnalnie można także dodać klauzulę finally, która wykonuje swój kod zawsze, bez względu na to, czy błąd zostanie zgłoszony czy nie.
  * Rolą tej klauzuli jest wykonywanie pewnych operacji związamych najcześciej z zasobami, na których wykonywane były operacje w bloku try.
- * Przykłdem może być zamknięcie pliku lub urządzenia, na którym były wykonywane działania. 
+ * Przykładem może być zamknięcie pliku lub urządzenia, na którym były wykonywane działania. 
  */
 try {
     console.log(obj.widthh(5));
@@ -39,4 +39,3 @@ function sendEmail(to, from, subject){
     }
 }
 sendEmail();
-console.log();

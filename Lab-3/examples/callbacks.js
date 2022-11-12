@@ -84,8 +84,8 @@ console.log(
     );
 /**
  * Funkcja map wymaga podania callback'u, który wyznaczy nową wartość.
- * Argumentami callbak'u jest bieżący element tabloci, indeks tego elementu oraz sama tablica to parametry opcjonalne. 
- * Przykład parsuje łańcuch z opisami osób (jedne wiersz - jedna osoba), Funkcja map zamienia wiersz tekstu na obiekt 
+ * Argumentami callbak'u jest bieżący element tablici, indeks tego elementu oraz sama tablica to parametry opcjonalne. 
+ * Przykład parsuje łańcuch z opisami osób (jeden wiersz - jedna osoba), Funkcja map zamienia wiersz tekstu na obiekt. 
  */
 let studentsStr = "Adam\t23\nEwa\t22\nKarol\t26";
 let studentObj = studentsStr.split('\n').map(line => {
@@ -125,7 +125,7 @@ console.log(`Największy element: ${arr.reduce((max, item) => item > max ? item 
  * utworzenie tablicy jednowymiarowej złożnej z wszystkich elementów podtablic. 
  */
 let array2D = [[1, 1, 1], [2, 2, 2], [3, 3, 3]];
-console.log(array2D.flatMap((arr1D) => arr1D));                    //spłaszczenie tablicy dwuwymiarowej do jednowymiarowej
+console.log(array2D.flatMap((arr1D) => arr1D));                    //`spłaszczenie` tablicy dwuwymiarowej do jednowymiarowej
 console.log(array2D.flatMap((arr1D) => arr1D.join(":")));
 /**
  * Funkcje 'some' i 'every' przyjmują predykat (funkcja zwracająca wartość logiczną) jako callback.
