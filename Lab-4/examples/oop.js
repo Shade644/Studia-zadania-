@@ -9,7 +9,7 @@ class Car{                                      //klasy korzystają ze strict mo
        Car.counter = 0;       
     }
     constructor(weight){
-        this.weight = weight;                   //pola publiczne można tworzyć wewnątrz konstruktora, nie wymagą deklaracji przed. Pamiętaj o this!!!
+        this.weight = weight;                   //pola publiczne można tworzyć wewnątrz konstruktora, nie wymagają deklaracji. Pamiętaj o this!!!
         this.#mileage = 0;
         Car.counter++;                          //odwołanie do pola statycznego wymaga podania klasy!!!
     }
@@ -27,7 +27,7 @@ class Car{                                      //klasy korzystają ze strict mo
 
     static withMileage(weight, mileage){        //metoda statyczna, która może być wywołana na klasie
         let car = new Car(weight);
-        car.#mileage = mileage;                 //metoda statyczna jest wewnątrz klasy, dlatego możemy tutaj odwołać się do pola prywatnego obiektu tej klasy
+        car.#mileage = mileage;                 //metoda statyczna jest wewnątrz klasy, dlatego można tutaj odwołać się do pola prywatnego obiektu tej klasy
         return car;                             
     }
 }
@@ -44,5 +44,5 @@ console.log(car);
 console.log("Liczba samochodów: " + Car.counter);   //odwołanie do pola statycznego, liczba wywołań konstruktora    
 let mileageCar = Car.withMileage(1000, 2000);       //utworzenie obiektu poprzez wywołanie metody statycznej
 console.log(mileageCar);
-console.log(mileageCar.mileage);                    //  
+console.log(mileageCar.mileage);                    //odczyt pola obiektu  
 console.log(new ElectricCar(1200, 80));
