@@ -35,9 +35,13 @@ window.onload = function(){
      * collection2 - elementy li klasy 'red' będące dziećmi elementu ul z klasą 'list'
      * collection3 - elementy klasy 'bold' typu li będące dziećmi elementu o id 'people'
      */
-    let collection1 = [];
+    let collection1 = []
+    collection1 =document.querySelectorAll('li[name="title"]');
     let collection2 = [];
+    collection2 =document.querySelectorAll('ul[class="list"] li.red');
     let collection3 = [];
+    collection3 =document.querySelectorAll('ul[id="people"] li.bold');
+    console.log(collection3)
     let message = "TEST\n";
     if (collection1.length === 1 && collection1[0].tagName === 'LI' && collection1[0].getAttribute('name') === 'title'){
         message += 'Test11 passed\n';

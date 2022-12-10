@@ -30,6 +30,12 @@ console.log("hasAttribute:", head.hasAttribute('accesskey'));
  * 5. Nadaj wartość atrybutu type drugiemu przyciskowi na 'clear'
  */
 
+    // let a = document.querySelector("li:nth-child(2)");
+    // a.classList.add("border");
+       let a = document.querySelector("li[data-active='Karolina']");
+        a.classList.add("border");
+
+
 
 
 
