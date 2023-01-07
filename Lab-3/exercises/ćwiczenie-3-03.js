@@ -13,7 +13,24 @@
 
 function makeTransaction(transaction){
     
+  
+        if (!transaction.amount){
+            throw new SyntaxError('Impossible to complete the transaction. Absent property amount in transaction!');
+        }
+     
+        if (!transaction.sourceAccount){
+            throw new SyntaxError('Impossible to complete the transaction. Absent property sourceAccount in transaction!');
+        
+        }
+        if (!transaction.targetAccount){
+            throw new SyntaxError('Impossible to complete the transaction. Absent property targetAccount in transaction!');
+        
+        }
+        if (transaction.amount < 0){
+            throw new SyntaxError('Impossible to complete the transaction. Amount is negative!');     
 }
+}
+
 
 try {
     makeTransaction({amount: 20, sourceAccount: "1224", targetAccount: "2345"});

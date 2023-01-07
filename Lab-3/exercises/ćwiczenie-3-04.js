@@ -19,6 +19,7 @@ function parseStudents(input) {
 
 const studentLines = "Adam\t123\taktywny\nEwa\t34\tnieaktywna\nRoman\t56\taktywny\nKazik\t-34\taktyw\nBogdan\tfalse";
 
+const students = parseStudents(studentLines);
 try {
     if (students.length == 3) {
         console.log("Test 41 passed");

@@ -6,14 +6,14 @@
 
 function largestNumber(arr){
 
-    if(!arr || !arr.lenght){
-        return undefined;
+    if(!arr || !arr.length){
+        return undefined 
     }
     else {
-        flattened = arr.flatMap(num => num)
-        console.log(flattened);
-        const a = Math.max.apply(null,flattened);
-        console.log(a);
+        let flattened = arr.flatMap(num => num);
+       // console.log(flattened);
+        let a = Math.max.apply(null,flattened);
+     //console.log(a);
         return a;
     }
  
